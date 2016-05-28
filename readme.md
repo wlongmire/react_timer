@@ -1,0 +1,1 @@
+This is a template for a React/Express project with built in foundation and routing.
