@@ -5,6 +5,8 @@ const {Route, Router, IndexRoute, hashHistory} = require('react-router');
 //components
 const Main = require('Main');
 const PageTemplate = require('PageTemplate');
+const TimerPage = require('TimerPage');
+const CountdownPage = require('CountdownPage')
 
 //load foundation
 require('style!css!foundation-sites/dist/foundation.min.css')
@@ -17,8 +19,8 @@ ReactDOM.render(
   <Router history={ hashHistory }>
     <Route path="/" component={ Main }>
 
-      <Route path="/page" component={PageTemplate} />
-      <IndexRoute component={PageTemplate} />
+      <Route path="/countdown" component={CountdownPage} />
+      <IndexRoute component={TimerPage} />
 
     </Route>
   </Router>,

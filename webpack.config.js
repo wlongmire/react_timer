@@ -35,6 +35,8 @@ module.exports = {
 
       //subpages
       PageTemplate: 'app/components/pages/PageTemplate.jsx',
+      TimerPage: 'app/components/pages/TimerPage.jsx',
+      CountdownPage: 'app/components/pages/CountdownPage.jsx',
 
       //css
       applicationStyles: 'public/styles/app.scss'

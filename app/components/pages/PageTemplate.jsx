@@ -1,4 +1,3 @@
-const { Link } = require('react-router');
 const React = require('react');
 
 const PageTemplate = React.createClass({
