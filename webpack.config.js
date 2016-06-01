@@ -33,6 +33,9 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       Nav: 'app/components/Nav.jsx',
 
+      //Timer components
+      Clock: 'app/components/Clock.jsx',
+
       //subpages
       PageTemplate: 'app/components/pages/PageTemplate.jsx',
       TimerPage: 'app/components/pages/TimerPage.jsx',
@@ -53,7 +56,7 @@ module.exports = {
             presets: ['react', 'es2015', 'stage-0']
           },
           test: /\.jsx?$/,
-          exclude: /(node_modules | bower_components)/
+          exclude: /(node_modules|bower_components)/
         }
     ]
   },
