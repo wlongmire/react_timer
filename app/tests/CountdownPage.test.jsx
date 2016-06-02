@@ -12,7 +12,7 @@ describe ('CountdownPage', () => {
   });
 
   describe ('handleSetCountdown', () => {
-    
+
     it('should set state to started and countdown', (done) => {
       const countdown = TestUtils.renderIntoDocument(<CountdownPage />);
       countdown.handleSetCountdown(10);
