@@ -82,7 +82,7 @@ const CountdownPage = React.createClass({
 
     return(
       <div>
-        <Clock totalSeconds={count} />
+      <Clock totalSeconds={count} />
         { renderControls( this.state.countdownStatus ) }
       </div>
     )
