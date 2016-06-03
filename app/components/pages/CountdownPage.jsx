@@ -33,6 +33,12 @@ const CountdownPage = React.createClass({
     }
   },
 
+  componentWillUnmount:function() {
+      //stop and reset when changing pages
+      clearInterval(this.timer);
+      this.timer = undefined;
+  },
+
   startCountdown:function() {
     this.timer = setInterval(() => {
 
@@ -46,7 +52,6 @@ const CountdownPage = React.createClass({
         count: (newCount >= 0)?newCount:0,
         countdownStatus: (newCount <= 0)?"stopped": "started"
       });
-
 
     }, 1000);
 
