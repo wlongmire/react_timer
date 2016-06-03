@@ -14,8 +14,6 @@ const CountdownPage = React.createClass({
 
   //added when props or state have been updated
   componentDidUpdate: function(prevProps, prevState) {
-    alert( this.state.countdownStatus );
-
     if (this.state.countdownStatus !== prevState.countdownStatus) {
 
       switch( this.state.countdownStatus) {
