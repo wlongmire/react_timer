@@ -9,7 +9,6 @@ const TimerPage = require('TimerPage');
 const CountdownPage = require('CountdownPage')
 
 //load foundation
-require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
 
 //load custom css

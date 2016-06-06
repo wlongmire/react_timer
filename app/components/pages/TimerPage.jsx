@@ -41,6 +41,11 @@ const TimerPage = React.createClass({
     }
   },
 
+  componentWillUnmount:function(){
+    clearInterval(this.timer);
+    this.timer = undefined;
+  },
+
   handleStatusChange:function(newStatus){
     this.setState({
       countdownStatus:newStatus
